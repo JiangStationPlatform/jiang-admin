@@ -11,4 +11,4 @@ COPY jiang-admin-1.0.0-SNAPSHOT.jar /app/
 ENTRYPOINT ["dockerize", "-timeout", "5m", "-wait", "http://35.241.113.30:8888/jiang-admin/dev/master", "java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/jiang-admin-1.0.0-SNAPSHOT.jar"]
 
 
-EXPOSE 8888
+EXPOSE 8084
