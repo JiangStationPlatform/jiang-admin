@@ -28,7 +28,7 @@ pipeline {
         stage('del') {
             steps {
                 echo '==>start del'
-                sh 'docker rmi $(docker images -q -f dangling=true)'
+                echo 'docker rmi $(docker images -q -f dangling=true)'
             }
         }
     }
