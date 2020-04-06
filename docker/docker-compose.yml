@@ -2,7 +2,7 @@ version: '3.1'
 services:
   jiang-admin:
     restart: always
-    image: 104.199.166.17:5000/jiang-admin
+    image: jiang-admin
     container_name: jiang-admin
     ports:
       - 8084:8084

@@ -8,7 +8,7 @@ RUN mkdir /app
 
 COPY jiang-admin-1.0.0-SNAPSHOT.jar /app/
 
-ENTRYPOINT ["dockerize", "-timeout", "5m", "-wait", "http://104.199.166.17:8888/jiang-admin/dev/master", "java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/jiang-admin-1.0.0-SNAPSHOT.jar"]
+ENTRYPOINT ["dockerize", "-timeout", "5m", "-wait", "http://34.80.214.44:8888/jiang-admin/dev/master", "java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/jiang-admin-1.0.0-SNAPSHOT.jar"]
 
 
 EXPOSE 8084
